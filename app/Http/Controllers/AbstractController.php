@@ -21,7 +21,7 @@ class AbstractController extends Controller {
     public function store()
     {   
         $item = $this->service->store(request()->all());
-        return response()->json(['item' => $item]);
+        return response()->json(['item' => $item], 201);
     }
 
     
