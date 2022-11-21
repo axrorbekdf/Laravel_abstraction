@@ -33,6 +33,7 @@ class ProductTest extends TestCase
     }
 
     // show
+    
     public function test_show_product_for_response()
     {   
         $product = \App\Models\Product::first();
@@ -51,7 +52,9 @@ class ProductTest extends TestCase
             ]
         ]);
     }
+    
     // store
+
     public function test_create_product_for_response()
     {   
         $product_data = [
@@ -74,7 +77,9 @@ class ProductTest extends TestCase
             ]
         ]);
     }
+    
     // update
+
     public function test_update_product_for_response()
     {   
         $product = \App\Models\Product::first();
@@ -99,6 +104,7 @@ class ProductTest extends TestCase
             "item",
         ]);
     }
+
     // delete
 
     public function test_delete_product_for_response()
